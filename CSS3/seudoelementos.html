@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+
+    <style>
+        /* Pseudolementos. Se aplica :: */
+        span::before{
+            content: '-';
+            font-size: 30px;
+        }
+        span::after{
+            content: 'Hola texto generado despues';
+            font-size: 30px;
+            color: blue;
+        }
+        /* Editar texto */
+        p::first-letter{
+            font-size: 45px;
+        }
+        p::first-line{
+            color: brown;
+        }
+        ul li::marker{
+            color: crimson;
+        }
+        input::placeholder{
+            color: cyan;
+            font-size: 15;
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+    <p>
+        texto primera linea
+    </p>
+    <ul>
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ul>
+    <input type="text" placeholder="Escribe tu nombre">
+</body>
+</html>

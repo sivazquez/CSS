@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seudoclases</title>
+
+    <style>
+        /* Pseudoclases : */
+        /* Enlaces no visitados */
+        a:link{
+            color: deeppink;
+        }
+        /* Enlaces  visitados */
+        a:visited{
+            color: green;
+        }
+        /* Focus */
+        input:focus{
+            background: red;
+        }
+        /* Hover */
+        a:hover{
+            font-size: 20px;
+            color: red;
+        }
+
+        /* Pseudoclase de negación */
+        p:not(.miparrafo){
+            color: royalblue;
+        }
+
+        /* Pseudoclases avanzadas */
+        /* Primer elemento */
+        .contenedoravanzado p:first-child{
+            color: saddlebrown;
+        }
+         /* Ultimo elemento */
+         .contenedoravanzado p:last-child{
+            color:seagreen
+        }
+        /* N elemento */
+        .contenedoravanzado p:nth-child(3){
+            color:turquoise;
+        }
+         /* N elemento inverso*/
+         .contenedoravanzado p:nth-last-child(2){
+            color:tomato;
+        }
+        /* Elementos pares */
+        .contenedorespares p:nth-child(even){
+            color:yellow;
+        }
+         /* Elementos inpares */
+         .contenedorespares p:nth-child(odd){
+            color:brown
+        }
+        /* Elementos N consecutivos */
+        .contenedorespares p:nth-child(4n){
+            color:cadetblue
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Este es un enlace</a>
+    <input type="text" name="" id="">
+    <br>
+    <br>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptas. 
+        Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+        culpa ad amet, mollitia accusantium aliquid perspiciatis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptas. 
+        Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+        culpa ad amet, mollitia accusantium aliquid perspiciatis?
+    </p>
+    <p class="miparrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptas. 
+        Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+        culpa ad amet, mollitia accusantium aliquid perspiciatis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptas. 
+        Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+        culpa ad amet, mollitia accusantium aliquid perspiciatis?
+    </p>
+
+    <div class="contenedoravanzado">
+        <p>
+           FIRST CHILD sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            PARRAFO NUMERO 3 sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            POSICION 2 ABAJO HACIA ARRIBA sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            LAST CHILD sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+    </div>
+
+    <div class="contenedorespares">
+        <p>
+            INPAR sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            PAR sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            INPAR sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+        <p>
+            PAR CUARTO ELEMENETO sit amet, consectetur adipisicing elit. Porro, voluptas. 
+            Aut eaque quia facere, sapiente voluptas illo aliquam error quisquam magnam velit vero, 
+            culpa ad amet, mollitia accusantium aliquid perspiciatis?
+        </p>
+    </div>
+</body>
+</html>

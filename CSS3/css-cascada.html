@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS CASCADA</title>
+    
+    <style>
+        /*  CSS LEE EN FORMA DE CASCADA
+            - Toma los elementos de arriba hacia abajp pero le da mayor importancia al de abajo
+            - Toma primero los elementos mas especificos.
+            - Se puede romper la regla con !important
+        */
+        p.miparrafo{
+            color: blue;
+        }
+        p{
+            color: red !important;
+        }
+        p{
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <p class="miparrafo">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, 
+        adipisci? Necessitatibus fuga illum iure ipsam beatae alias exercitationem, 
+        totam unde, nemo non error possimus voluptate, animi commodi numquam similique tempore?
+    </p>
+    <p >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, 
+        adipisci? Necessitatibus fuga illum iure ipsam beatae alias exercitationem, 
+        totam unde, nemo non error possimus voluptate, animi commodi numquam similique tempore?
+    </p>
+</body>
+</html>

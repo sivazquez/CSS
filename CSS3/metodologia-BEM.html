@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología BEM</title>
+
+    <style>
+        /* 
+            BEM
+            - BLOCK .block
+            - ELEMENT .block__item
+            - MODIFIER .block--modifier
+        */
+        /* mal ejecutado
+        div.box{
+            width: 200px;
+            background: lightskyblue;
+            padding: 40px;
+            margin: 20px;
+        }
+        div.box button{
+            width: 100px;
+            height: 40px;
+            background: rgb(2,68,153);
+            border: none;
+            color: #fff;
+
+        }*/
+        /* BLOCK */
+        .box{
+            width: 200px;
+            background: lightskyblue;
+            padding: 40px;
+            margin: 20px;
+        }
+        /* ELEMENT */
+        .box__btn{
+            width: 100px;
+            height: 40px;
+            background: rgb(2,68,153);
+            border: none;
+            color: #fff;
+        }
+        /* MODIFIER */
+        .box--bgred{
+            background: red;
+        }
+        .box__btn--bggreen{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Officiis iusto fugiat dolores eaque excepturi, porro neque cupiditate animi. Excepturi minus quod maxime. 
+            Esse corporis vitae temporibus, enim optio laboriosam molestias.
+        </p>
+        <button class="box__btn">Click aquí</button>
+    </div>
+    <div class="box">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Officiis iusto fugiat dolores eaque excepturi, porro neque cupiditate animi. Excepturi minus quod maxime. 
+            Esse corporis vitae temporibus, enim optio laboriosam molestias.
+        </p>
+        <button class="box__btn">Click aquí</button>
+    </div>
+    <div class="box box--bgred">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Officiis iusto fugiat dolores eaque excepturi, porro neque cupiditate animi. Excepturi minus quod maxime. 
+            Esse corporis vitae temporibus, enim optio laboriosam molestias.
+        </p>
+        <button class="box__btn box__btn--bggreen">Click aquí</button>
+    </div>
+</body>
+</html>

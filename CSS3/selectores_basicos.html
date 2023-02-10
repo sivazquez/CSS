@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores basicos</title>
+
+    <style>
+        /* Selectores por etiqueta */
+        h1{
+            color: green;
+        }
+        /* Selectores por ID */
+        #miparrafo{
+            color:blue;
+        }
+        /* Selectores por clase */
+        .parrafo{
+            color: brown;
+        }
+        .fuente-bold{
+            font-weight: 600;
+        }
+
+        .fondo-color{
+            background-color: red;
+        }
+
+        .texto-blanco{
+            color: #fff;
+        }
+
+        /* Clases agrupadas*/
+        .fondo-color.texto-blanco{
+            font-size: 50px;
+        }
+
+        /* Selector General */
+        *{
+            padding-top: 10px;
+        }
+
+        /* Selectores Agrupados */
+        h3, h4, h5{
+            color: cornflowerblue;
+        }
+
+        h6, .clase-agrupada{
+            font-size: 5px;
+        }
+        
+        /* Selectores descendientes */
+        #contenedor p{
+            color: chartreuse;
+        }
+
+        #contenedor h3{
+            color: darkgoldenrod;
+        }
+
+        #contendor3 ul li a{
+            color: darkred;
+        }
+
+        /* Selectores Hijos */
+
+        #contenedor_hijo > div > h1{
+            font-size: small;
+        }
+
+        /* Selectores Hermanos */
+        #contendero-hermano h1 ~ span {
+            font-weight: 100;
+            color: darksalmon;
+        }
+
+        /* Selector adyacente */
+        #contendero-hermano h1 + span{
+            font-weight: 200;
+            color: darkturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Titulo de mi pagina</h1>
+    <p id="miparrafo">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Consequatur corrupti sit magnam nulla ducimus reiciendis obcaecati minus provident perspiciatis iure ab enim aliquid impedit rerum aut, 
+        atque necessitatibus amet veritatis!
+    </p>
+
+    <p class="parrafo fuente-bold">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Consequatur corrupti sit magnam nulla ducimus reiciendis obcaecati minus provident perspiciatis iure ab enim aliquid impedit rerum aut, 
+        atque necessitatibus amet veritatis!
+    </p>
+
+    <p class="fondo-color texto-blanco">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Consequatur corrupti sit magnam nulla ducimus reiciendis obcaecati minus provident perspiciatis iure ab enim aliquid impedit rerum aut, 
+        atque necessitatibus amet veritatis!
+    </p>
+
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <p class="clase-agrupada">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Repudiandae nesciunt distinctio maxime quibusdam laborum aperiam quidem minima, 
+        veniam tenetur quo labore hic quia aliquid. Ipsa voluptatibus voluptatem quisquam doloribus quas.
+    </p>
+
+    <div id="contenedor">
+        <h3>Titulo h3</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error non magni earum magnam omnis harum quo, 
+            tempore amet nesciunt sunt, veniam dicta sapiente accusantium quod maiores, culpa suscipit cum delectus.
+        </p>
+        <a href="">enlace</a>
+    </div>
+
+    <div id="contendor3">
+        <ul>
+            <li><a href="">Enlace 1</a></li>
+            <li><a href="">Enlace 2</a></li>
+            <li><a href="">Enlace 3</a></li>
+        </ul>
+    </div>
+
+    <div id="contenedor_hijo">
+        <div>
+            <h1>Titulo contenedor hijo</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error non magni earum magnam omnis harum quo, 
+                tempore amet nesciunt sunt, veniam dicta sapiente accusantium quod maiores, culpa suscipit cum delectus.
+            </p>
+        </div>
+        
+        <div>
+            <h1>Titulo contenedor hijo</h1>
+            <div>
+                <h1>Titulo subhijo</h1>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="contendero-hermano">
+            <h1>Titulo hermano</h1>
+            <span>Span hermano h1</span>
+            <span>Span hermano 2 h1</span>
+        </div>
+        <div id="contendero-hermano">
+            <h1>Titulo hermano</h1>
+            <span>Span hermano h1</span>
+        </div>
+        <div id="contendero-hermano">
+            <h1>Titulo hermano</h1>
+            <span>Span hermano h1</span>
+            <div>
+                <span>Span que no es hermano h1</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

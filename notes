@@ -1,0 +1,17 @@
+/*********************************ESTRUCTURA HTML 5***************************************/
+Esta compuesta por:
+<header></header>
+<nav></nav>
+<article></article>
+<section></section>
+<aside></aside>
+<footer></footer>
+
+/*********************************ETIQUETAS MULTIMEDIA***************************************/
+<figure>
+    <img src="" alt">
+    <figcaption> Leyenda de la imagenes </figcaption>
+</figure>
+
+<video src="" autoplay controls loop></video>
+<audio src="" autoplay controls loop></audio>
