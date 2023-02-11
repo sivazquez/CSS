@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: o;
+            padding: 0;
+        }
+        .flexible{
+            background: lightskyblue;
+            width: 50vw;
+            height: 50vh;
+        }
+       .flexiblemin{
+           font-size: 5vmin;
+       }
+       .flexiblemax{
+           font-size: 5vmax;
+       }
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <p>
+            La medida vw usa la referencia del viewport del navegador 50vw es el 50% del vieport del navegador.
+            La medida vmin se hace pequeña pero no crece hasta un cierto tamaño.
+            La medida vmax se hace mas grande pero no se hace más pequeña hasta cierto tmaño.
+        </p>
+    </div>
+    <div class="flexible"></div>   
+    <h1 class="flexiblemin">
+        Titulo 5vmin
+    </h1> 
+    <h1 class="flexiblemax">
+        Titulo 5vmax
+    </h1> 
+</body>
+</html>

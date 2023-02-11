@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            font-size: 10px;
+        }
+        body{
+            font-size: 5px;
+        }
+        .rem{
+            font-size: 3rem;
+        }
+        .em{
+            font-size: 2em;
+        }
+        .ex{
+            font-size: 1ex;
+        }
+        .ch{
+            font-size: 2ch;
+        }
+        p{
+            font-size: 20px;
+        }
+        div{
+            background-color: blue;
+            color: white;
+            height: 50px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="rem">REM relativo al contenedor abuelo</h1>
+    <p>
+        El root tiene el font-size de 10px su nieto un h1 es de 3rem el valor sera 30px;
+    </p>
+    <h1 class="em">EM relativo al contenedor padre</h1>
+    <p>
+        El root tiene el font-size de 10px 
+        su hijo que es el primer contendero que es el body tiene un font-size de 5px;
+        su nieto un h1 es de 2em el valor sera 10px;
+    </p>
+    <h1 class="ex">EX mitad de la fuente establecida</h1>
+    <p>
+        La unidad ex es la mitad del tamaño de la fuente establecida por el navegador del usuario 
+        que por lo regular es 16px = 1em, entonces la mitad de 16px es 8, por lo que 8/16 = 0.5, 
+        por lo que 1ex es igual a . 5em.
+    </p>
+    <h1 class="ch">CH tamaño del ancho del cero de la fuente</h1>
+    <p>
+        Unidad de medida es relativa al tamaño del ancho del cero en la fuente del navegador.
+    </p>
+    <div>
+        <p>
+            Porcentaje: medida realtiva al tamaño del contenedor.
+        </p>
+    </div>
+</body>
+</html>
